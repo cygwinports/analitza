@@ -1,0 +1,7 @@
+inherit kde4
+
+
+PKG_NAMES="${PN} libanalitza4 libanalitza-devel"
+analitza_CONTENTS="usr/bin/calgebra.exe usr/share/doc/"
+libanalitza4_CONTENTS="usr/bin/cyganalitza*-4.dll"
+libanalitza_devel_CONTENTS="usr/include/ usr/lib/"

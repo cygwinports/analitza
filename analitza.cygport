@@ -1,0 +1,17 @@
+inherit kde4
+
+NAME="analitza"
+VERSION=4.10.5
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE algebra library"
+DESCRIPTION="Part of the KDE education suite"
+
+PKG_NAMES="${NAME} libanalitza4 libanalitza-common libanalitza-devel"
+analitza_CATEGORY="Math"
+analitza_SUMMARY="KDE console algebra application"
+analitza_CONTENTS="usr/bin/calgebra.exe usr/share/doc/"
+libanalitza4_REQUIRES="libanalitza-common"
+libanalitza4_CONTENTS="usr/bin/cyganalitza*-4.dll"
+libanalitza_common_CONTENTS="usr/share/kde4/apps/libanalitza/"
+libanalitza_devel_CONTENTS="usr/include/ usr/lib/"

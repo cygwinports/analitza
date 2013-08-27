@@ -1,4 +1,0 @@
-category: KDE Math
-requires: libanalitza4 libgcc1 libQtCore4 libreadline7 libstdc++6
-sdesc: "KDE algebra console application"
-ldesc: "KDE education suite"

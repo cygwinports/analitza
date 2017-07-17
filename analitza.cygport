@@ -1,17 +1,21 @@
 inherit kf5
 
 NAME="analitza"
-VERSION=16.08.3
+VERSION=17.04.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE algebra library"
 DESCRIPTION="Part of the KDE education suite"
 
-PKG_NAMES="${NAME} libanalitza7 libanalitza-common libanalitza-devel"
-analitza_CONTENTS= # used to provide calgebra(1)
-libanalitza7_REQUIRES="libanalitza-common"
-libanalitza7_CONTENTS="usr/bin/cygAnalitza*-7.dll ${QT5_QMLDIR#/}/org/kde/analitza/"
-libanalitza_common_CONTENTS="usr/share/libanalitza/ usr/share/doc/"
+PKG_NAMES="${NAME} libanalitza8 libanalitza-common libanalitza-devel"
+analitza_CONTENTS="${QT5_QMLDIR#/}/org/kde/analitza/"
+libanalitza8_REQUIRES="libanalitza-common"
+libanalitza8_CONTENTS="usr/bin/cygAnalitza*-8.dll"
+libanalitza_common_CONTENTS="
+	usr/share/libanalitza/
+	usr/share/doc/
+	usr/share/locale/*/LC_MESSAGES/analitza_qt.qm
+"
 libanalitza_devel_REQUIRES="libGLEW-devel libGLU-devel libQt5Gui-devel"
 libanalitza_devel_CONTENTS="
 	usr/include/Analitza5/
